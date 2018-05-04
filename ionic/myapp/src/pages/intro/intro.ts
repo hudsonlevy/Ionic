@@ -2,28 +2,24 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the FeedPage page.
+ * Generated class for the IntroPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+
 @IonicPage()
 @Component({
-  selector: 'page-feed',
-  templateUrl: 'feed.html',
+  selector: 'page-intro',
+  templateUrl: 'intro.html',
 })
-export class FeedPage {
-public nome_usuario:string = "Charles Franca do Código";
+export class IntroPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-public somaDoisNumeros(num1:number, num2:number): void{
-  alert(num1 + num2);
-}
-
   ionViewDidLoad() {
-    //this.somaDoisNumeros(10, 99);
+    console.log('ionViewDidLoad IntroPage');
   }
 
 }
