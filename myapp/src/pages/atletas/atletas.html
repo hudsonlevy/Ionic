@@ -14,5 +14,6 @@
 
 
 <ion-content padding>
-
+   <img *ngIf="img" [src] ="img" alt="">
+   <button ion-button block (click)="tirarFoto()">Tirar Foto</button>
 </ion-content>
